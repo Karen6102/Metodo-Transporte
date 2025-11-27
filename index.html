@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Método de Transporte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Método de Transporte — Comparación de Soluciones Iniciales</h1>
+        <p class="muted">Ejecuta Costo Mínimo y Aproximación de Vogel (VAM), luego compara resultados.</p>
+    </header>
+
+    <div class="wrap">
+        <div class="grid">
+            <div class="card">
+                <h2>Entrada de datos</h2>
+                <label>Oferta (supply)</label>
+                <input id="supply" value="7, 9, 18" />
+
+                <label>Demanda (demand)</label>
+                <input id="demand" value="5, 8, 7, 14" />
+
+                <label>Matriz de costos</label>
+                <textarea id="costs">19, 30, 50, 10
+70, 30, 40, 60
+40, 8, 70, 20</textarea>
+
+                <div class="row">
+                    <button id="run">Ejecutar</button>
+                    <button id="reset">Reset ejemplo</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Resultados</h2>
+                <div id="summary" class="muted">Sin resultados aún.</div>
+                <div id="tables"></div>
+                <div id="total" class="result"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/Transporte.js"></script>
+</body>
+
+</html>
